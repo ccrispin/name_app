@@ -1,0 +1,20 @@
+-- crear aplicacion rails, se ubican el la carpeta site o cualquier otra para ubicar la app a crear 
+C:\site>rails new name_app
+
+-- se crea la app name_app con la estructura de carpetas propia del propio rails
+-- se ubican dentro de la carpeta creada name_app y se ejecuta el comando para correr el servidor
+C:\site>cd name_app
+C:\site\name_app>rails server
+
+-- con el comando anterior se ejecuta el server para poder correar la app web
+
+-- para crear un controlador "welcome" y su respectiva vista "index"
+C:\site\name_app>rails generate controller welcome index
+
+-- se crea un archivo welcome_controller.rb en la carpeta C:\Sites\name_app\app\controllers y la vista index.html.erb en C:\Sites\name_app\app\views\welcome
+
+-- luego para que esta vista sea la vista raiz o la primera vista que cargar se modifica el archivo routes.rb en C:\Sites\name_app\config 
+-- se descomenta la linea 
+# root 'welcome#index'
+
+-- con esto hacemos que al correr al app web por 1° vez cargue la vista index del controlador welcome
